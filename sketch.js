@@ -4,10 +4,10 @@ let noteSpan;
 
 function setup() {
   createCanvas(400, 400);
-  // AudioContext.resume();
   getAudioContext().resume();
-  enableBtn = createButton('Enable Mic');
-  enableBtn.mousePressed(toggleLiveInput);
+  // enableBtn = createButton('Enable Mic');
+  // enableBtn.mousePressed(toggleLiveInput);
+  toggleLiveInput();
   noteSpan = select('#pitch');
   textSize(48);
 }
